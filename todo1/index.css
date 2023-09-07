@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    color:white;
+ 
+}
+header{
+    padding:2rem 1rem;
+    max-width: 1000px;
+    width:100%;
+    margin:0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    color:blue;
+    font-weight: 300;
+    margin-bottom:1rem;
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#form1{
+    display:flex;
+}
+input,button{
+    appearance: none;
+    border:none;
+    outline:none;
+    background:none;
+}
+#inp{
+    flex:1 1 0%;
+    background-color:black;
+    padding:1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color:lightblue;
+    font-size: 1.25rem;
+}
+#inp::placeholder{
+    color:grey;
+}
+#submit{
+    color:pink;
+    font-size:1.25rem;
+    font-weight:700;
+    border :solid 2px black;
+    background-image:linear-gradient(to right,red,purple);
+    border-radius: 80px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#submit:hover{
+    opacity:0.8;
+    background-color:green;
+    color: black;
+}
+#submit:active{
+    opacity:0.6;
+}
+main{
+    padding:2rem 1rem;
+    flex:1 1 0%;
+    max-width:900px;
+    width:100%;
+    margin: 2px auto;
+}
+#maindiv{
+    display:flex;
+    flex-direction: column;
+    border:solid 2px black;
+    height: 550px;
+    margin:4px 4px 4px 4px;
+    background-color: rgb(202, 202, 225);
+}
+.task-list{
+    margin-top:1rem;
+    margin-left:2rem;
+    text-align:center;
+    padding:2rem 1rem;
+    border:solid 2px green;
+    max-width: 1200px;
+    width:100%;
+    background-color: rgb(164, 188, 164);
+}
+.task-list h2{
+    font-size:1.5rem;
+    font-weight:300;
+    color:blue;
+    margin-bottom:1rem;
+
+}
+#tasks .task{
+    display:flex;
+    flex: 1 1 0%;
+    justify-content:space-between;
+    background-color: lightblue;
+    padding:1rem;
+    border-radius:1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#tasks .task .content .text{
+    color:red;
+    font-size:1.125rem;
+    width:100%;
+    display:block;
+    transition:0.4s;
+
+}
+
+#tasks .task .actions{
+    display:flex;
+    margin:0 -0.5rem;
+}
+.task .actions button{
+    cursor:pointer;
+    margin:0 0.5rem;
+    font-size:1.125rem;
+    font-weight: 800;
+    text-transform:uppercase;
+    transition:0.4s;
+}
+.task .actions button:hover{
+    opacity:0.8;
+}
+.task .actions button:active{
+    opacity:0.6;
+}
+.task .actions .edit{
+    background-image:linear-gradient(to right,pink,purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.task .actions .delete{
+    color:crimson;
+}
+
+
+
